@@ -43,9 +43,9 @@ namespace MySQLProject {
 		}
 	private: System::Windows::Forms::DataGridView^ dataGridView1;
 	protected:
-	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Friends;
+
 	private: System::Windows::Forms::DataGridView^ dataGridView2;
-	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Phones;
+
 
 	private:
 		/// <summary>
@@ -61,9 +61,7 @@ namespace MySQLProject {
 		void InitializeComponent(void)
 		{
 			this->dataGridView1 = (gcnew System::Windows::Forms::DataGridView());
-			this->Friends = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
 			this->dataGridView2 = (gcnew System::Windows::Forms::DataGridView());
-			this->Phones = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView2))->BeginInit();
 			this->SuspendLayout();
@@ -71,7 +69,6 @@ namespace MySQLProject {
 			// dataGridView1
 			// 
 			this->dataGridView1->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
-			this->dataGridView1->Columns->AddRange(gcnew cli::array< System::Windows::Forms::DataGridViewColumn^  >(1) { this->Friends });
 			this->dataGridView1->Location = System::Drawing::Point(1, 12);
 			this->dataGridView1->Name = L"dataGridView1";
 			this->dataGridView1->RowHeadersWidth = 51;
@@ -79,17 +76,9 @@ namespace MySQLProject {
 			this->dataGridView1->Size = System::Drawing::Size(240, 150);
 			this->dataGridView1->TabIndex = 0;
 			// 
-			// Friends
-			// 
-			this->Friends->HeaderText = L"Friends";
-			this->Friends->MinimumWidth = 6;
-			this->Friends->Name = L"Friends";
-			this->Friends->Width = 125;
-			// 
 			// dataGridView2
 			// 
 			this->dataGridView2->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
-			this->dataGridView2->Columns->AddRange(gcnew cli::array< System::Windows::Forms::DataGridViewColumn^  >(1) { this->Phones });
 			this->dataGridView2->Location = System::Drawing::Point(269, 12);
 			this->dataGridView2->Name = L"dataGridView2";
 			this->dataGridView2->RowHeadersWidth = 51;
@@ -97,18 +86,11 @@ namespace MySQLProject {
 			this->dataGridView2->Size = System::Drawing::Size(240, 150);
 			this->dataGridView2->TabIndex = 1;
 			// 
-			// Phones
-			// 
-			this->Phones->HeaderText = L"Phones";
-			this->Phones->MinimumWidth = 6;
-			this->Phones->Name = L"Phones";
-			this->Phones->Width = 125;
-			// 
 			// MyForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(991, 390);
+			this->ClientSize = System::Drawing::Size(510, 162);
 			this->Controls->Add(this->dataGridView2);
 			this->Controls->Add(this->dataGridView1);
 			this->Name = L"MyForm";
